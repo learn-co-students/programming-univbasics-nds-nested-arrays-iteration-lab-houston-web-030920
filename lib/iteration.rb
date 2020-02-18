@@ -1,25 +1,56 @@
 def join_ingredients(src)
-  # Given an Array of 2-element Arrays ( [ [food1, food2], [food3, # food4]....[foodN, foodM]]):
-  #
-  # Build a new Array that contains strings where each pair of foods is
-  # inserted into this template:
-  #
-  # "I love (inner array element 0) and (inner array element 1) on my pizza""
-  # As such, there should be a new String for each inner array, or pair
+  ingredients = src
+  
+  final_statement = []
+  list_index = 0
+  while list_index < ingredients.count do
+      final_statement.push("I love #{(ingredients[list_index][0])} and #{(ingredients[list_index][1])} on my pizza")
+    list_index += 1
+  end
+  return final_statement
 end
+
+######################################
 
 def find_greater_pair(src)
-  # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
-  # Produce a new Array that contains the larger number of each of the pairs
-  # that are in the inner Arrays
+  numbers = src
+
+  sorted_numbers = []
+  pair_index = 0
+  while pair_index < numbers.count do
+    sorted_numbers.push(numbers[pair_index].sort)
+    pair_index += 1
+    final_statement = []
+    larger_number = 0
+      while larger_number < sorted_numbers.count do
+        final_statement.push(sorted_numbers[larger_number][-1])
+        larger_number += 1
+      end  
+  end
+  return final_statement
 end
 
+######################################
+
 def total_even_pairs(src)
-  # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
-  # if both numbers in the pair are even, then add both those numbers to the
-  # total
-  #
-  # As a reminder any number % 2 will return 0 or 1. If the result is 0, then
-  # the number was even. Review the operator documentation if you've forgotten
-  # this!
+  all_numbers = src
+  
+  even_numbers = []
+  
+  all_numbers.each { |num| 
+    if num[0] && num[1] % 2 == 0
+      even_numbers.push(num)
+      end }
+      
+  total = 0
+  numbers_pairs = 0     
+  while numbers_pairs < even_numbers.count do
+    numbers = 0 
+    while numbers < even_numbers[numbers_pairs].count do
+      total += even_numbers[numbers_pairs][numbers]
+      numbers += 1 
+    end
+    numbers_pairs += 1 
+  end  
+  return total
 end
