@@ -1,4 +1,4 @@
-# Nested Data Structures: Printing and Coalescing Data
+ # Nested Data Structures: Printing and Coalescing Data
 
 ## Learning Goals
 
