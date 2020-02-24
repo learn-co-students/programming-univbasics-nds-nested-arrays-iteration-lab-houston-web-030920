@@ -1,0 +1,22 @@
+Setting up dir for programming-univbasics-nds-nested-arrays-iteration-lab-houston-web-030920
+Lab Environment Created
+Latest WIP branch is wip
+Pulling from branch
+From github.com:Linxerz/programming-univbasics-nds-nested-arrays-iteration-lab-houston-web-030920
+ * branch            wip        -> FETCH_HEAD
+Updating 3d6f055..cb6074c
+Fast-forward
+Squash commit -- not updating HEAD
+ lib/iteration.rb                     | 3 +++
+ {spec => lib/spec}/iteration_spec.rb | 0
+ {spec => lib/spec}/spec_helper.rb    | 0
+ 3 files changed, 3 insertions(+)
+ rename {spec => lib/spec}/iteration_spec.rb (100%)
+ rename {spec => lib/spec}/spec_helper.rb (100%)
+Resetting HEAD
+Unstaged changes after reset:
+M	lib/iteration.rb
+D	spec/iteration_spec.rb
+D	spec/spec_helper.rb
+Finding old WIP branches to delete
+Finished deleting old wip branches
