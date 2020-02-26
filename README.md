@@ -24,6 +24,11 @@ _real_ problem, but which is kept intentionally ***very simple*** so that you
 can see how it might be adapted to your particular need. Some people call these
 "reference implementations."
 
+
+
+
+
+
 ## Display the Cells in an `Array` of `Array`s
 
 It's not often we say this, but this following bit of code is worth memorizing.
